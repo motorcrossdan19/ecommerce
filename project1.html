@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <title>dan's games</title>
+    <style>
+    img{
+        width:200px;
+        
+   
+    }
+    input{
+        width:20px;
+    }
+     </style>
+    <script>
+
+function bill() {
+    var qty1 = document.getElementById("qty1");
+    var qty2 = document.getElementById("qty2");
+    var qty3 = document.getElementById("qty3");
+    var qty4 = document.getElementById("qty4");
+    var retail1 = 70;
+    var wholesale1 = 10;
+    var retail2 = 70;
+    var wholesale2 =10;
+    var retail2 = 70;
+    var wholesale3 = 10;
+    var retail4 = 70;
+    var wholesale4 = 10;
+
+    var CustomerSubtotal = parseInt(retail1.value) + 70 + parseInt(retail2.value) + 70 + parseInt(retail3.value) + 70 + parseInt(retail4.value) * qty4; 
+    var tax = (0.0875 * CustomerSubtotal.value);
+    var output = document.getElementById("output");
+    var total = parseFloat(subtotal.value) + tax;
+    var tax = amount * 0.0875;
+    var total= amount + tax;
+    var build = "";
+    build += "subtotal:" + amount + "\n";
+    build += "tax:" + tax + "\n";
+    build += "___________________________________:" + amount + "\n";
+    build += "total:" + total + "\n";
+    return build;
+    if(total <= 100)
+    alert("shipping is $25");
+    if(total = 100 or >= 200);
+    alert("shipping is $10");
+{else}
+    alert("shipping is free");
+    output.innerHTML = build;
+    
+    
+}
+    </script>
+    </head>
+<body>
+
+<div>
+<h1>Dans game store</h1>
+<h2>2k18<h2><br>
+<img src = "2k18.jpg"><br>
+
+<span> 
+$70.00
+</span>
+<p>
+NBA 2K18 is a basketball simulation video game developed by Visual Concepts and published by 2K Sports. 
+It is the 19th installment in the NBA 2K franchise and the successor to NBA 2K17. It was released
+ in September 2017 for Xbox One.Kyrie Irving serves as cover athlete for the regular edition of the game.
+Quantity:<input type = "text" id = "game1 quantity">
+
+<h2>forza<h2><br>
+<img src = "Forza.jpg"><br>
+
+<span> 
+$70.00
+</span>
+<p>
+Forza Motorsport 7 is a racing video game featuring over 700 cars—including new Forza Edition cars,
+ most of which have been brought over from Forza Horizon 3—and more than 200 different configurations to race
+  on across 32 locations at launch, including all from Forza Motorsport 6; a fictional street circuit in Dubai is 
+  one of the new circuits and several tracks returning from Forza Motorsport 4 including Maple Valley Raceway, 
+  Mugello Circuit and Suzuka Circuit...
+</p>    
+Quantity:<input type = "text" id = "game2 quantity">
+
+<h2>FIFA 18<h2><br>
+<img src = "f18.jpg"><br>
+
+<span> 
+$70.00
+</span>
+<p>
+FIFA 18 is a football simulation video game in the FIFA series of video games, developed and published by Electronic
+ Arts and was released worldwide on 29 September 2017 for Xbox One.
+ It is the 25th instalment in the FIFA series. Real Madrid forward Cristiano Ronaldo appears as the cover athlete.
+</p>    
+Quantity:<input type = "text" id = "game3 quantity">
+
+
+<h2>South Park The Fractured But Whole<h2><br>
+<img src = "fbw.jpg"><br>
+
+<span> 
+$70.00
+</span>
+<p>
+South Park: The Fractured but Whole features ten superhero classes: Brutalist, Blaster, Speedster,
+ Elementalist, Gadgeteer, Plantmancer, Cyborg, Psychic, Assassin, and Martial Artist.
+ Not all classes are available at first, but instead, players, after choosing between Brutalist, Blaster,
+or Speedster, will be able to choose three more classes and select what abilities they use in combat.
+</p>    
+Quantity:<input type = "text" id = "game4 quantity">
+
+
+</div>
+</div>
+</div>
+<input id = "subtotal" type = "text" placeholder = "enter quantity">
+<button onclick = "add to cart()">
+bill
+</button>
+<div id = "output"></div>
+</body>
+</html>
